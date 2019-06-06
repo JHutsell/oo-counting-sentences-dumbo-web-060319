@@ -18,5 +18,6 @@ class String
     sentences = self.split(/[.!?]/)
     count = 0 
     sentences.each { |sentence| count += 1 }
+    count
   end
 end
