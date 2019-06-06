@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    sentences = self.split(/[.!?]/).length
+    sentences = self.split(/[.!?]/)
     count = 0 
     sentences.each { |sentence| count += 1 }
     count
