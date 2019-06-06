@@ -16,6 +16,7 @@ class String
 
   def count_sentences
     sentences = self.split(/[.!?]/).length
+    sentences.reject { |item| item.nil? || item == '' }.count
     # count = 0 
     # sentences.each { |sentence| count += 1 }
     # count
